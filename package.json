@@ -1,0 +1,39 @@
+{
+  "name": "signalkey",
+  "version": "0.1.0-alpha.2",
+  "private": true,
+  "type": "module",
+  "description": "SignalKey by Magnexis — local USB workflow button companion",
+  "main": "dist/main.cjs",
+  "scripts": {
+    "build": "tsx scripts/build.ts",
+    "start": "electron .",
+    "dev": "npm run build && electron .",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts tests/*.test.mjs",
+    "cli": "tsx packages/cli/index.ts",
+    "demo:sdk": "tsx examples/status.ts",
+    "package:win": "npm run build && tsx scripts/package.ts",
+    "test:desktop": "tsx scripts/smoke.ts",
+    "format": "prettier --write apps packages scripts tests manufacturing/cost-model.mjs"
+  },
+  "dependencies": {
+    "node-hid": "3.4.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "zod": "4.6.2"
+  },
+  "devDependencies": {
+    "@electron/packager": "20.3.0",
+    "@playwright/test": "1.63.0",
+    "@types/node": "24.13.4",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "electron": "44.3.0",
+    "esbuild": "0.28.2",
+    "prettier": "3.9.6",
+    "tsx": "4.23.13",
+    "typescript": "7.0.2",
+    "vite": "8.3.0"
+  }
+}

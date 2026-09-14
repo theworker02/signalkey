@@ -1,0 +1,13 @@
+test,proposed_samples,method,provisional_acceptance,evidence,status
+USB direct host,3,Windows hosts with recorded OS builds,100 connect cycles each without lost target or action replay,not collected,physical gate
+USB hubs,3,powered and unpowered known hubs,100 cycles per hub without stale success after host loss,not collected,physical gate
+Cables,3,known data A-to-C and C-to-C both orientations,enumerate and run pass/fail across cable matrix,not collected,custom USB-C board required
+Sleep wake,3,20 sleep/wake cycles per host,unknown on loss and same identity reconnect without action replay,not collected,physical gate
+Multiple devices,2,swap and remove selected serial,never silently switch active target,not collected,physical gate
+Switch cycling,5,10000 automated cycles plus hand feel evaluation,no stuck input or mechanical damage; final life target TBD,not collected,engineer approval needed
+Connector stress,5,fixture-controlled cable forces and mating cycles,force cycle count and deformation thresholds TBD by connector rating,not collected,blocked on connector choice
+Enclosure fit,5,measure dimensions and cap travel tolerance stack,no binding; load bypasses solder; drawings must define limits,not collected,M1 geometry checked; component fit and toleranced drawings pending
+Temperature current,3,maximum allowed light for 4 hours at specified ambient,within component deratings and approved USB current limits,not collected,limits and lab setup pending
+Heartbeat expiry,3,disconnect host process with device powered,stale within 6020ms; no action replay,not collected,physical gate
+EMC ESD,3,qualified lab pretest plan,limits and test levels selected by lab for intended markets,not collected,lab quotation pending
+Software regression,1,automated host and desktop tests,all applicable tests pass,docs/evidence,verified host only

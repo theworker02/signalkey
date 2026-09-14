@@ -1,0 +1,17 @@
+{
+  "date": "2026-09-12T16:19:51.276Z",
+  "desktop": "PASS \u2192 FAILURE \u2192 PASS observed through UI",
+  "security": {
+    "contextIsolation": true,
+    "nodeIntegration": false,
+    "sandbox": true
+  },
+  "nativeHidEnumeration": true,
+  "profileCreateEditReload": true,
+  "disabledProfileCannotRun": true,
+  "staleHeartbeatAndRecovery": true,
+  "platform": "win32",
+  "osRelease": "10.0.26200",
+  "electron": "44.3.0",
+  "historyDisplayed": true
+}

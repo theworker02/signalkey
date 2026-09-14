@@ -1,0 +1,206 @@
+{
+  "sourceSha256": "08392d3b2ebdac3c621517e0f143967c4d74927232270d72a158eef53be83cb7",
+  "exporterSha256": "fad22f02d5fd3198a1f55524463ddee6aa5072913669ae852245109c4df149bd",
+  "revision": "M2",
+  "status": "digital geometry verified; physical fit and load untested",
+  "method": "OpenSCAD 2021.01 export; trimesh mesh checks; declared envelope checks",
+  "parts": [
+    {
+      "file": "base.stl",
+      "boundsMm": [
+        180.0,
+        110.0,
+        3.0
+      ],
+      "volumeMm3": 58938.575657519985,
+      "closed": true,
+      "oneBody": true,
+      "sha256": "25026c90cdc8d1abaec2b3870d5c6a700eca599158744fd296f47e603932a175"
+    },
+    {
+      "file": "deck.stl",
+      "boundsMm": [
+        180.0,
+        110.0,
+        3.0
+      ],
+      "volumeMm3": 37905.89881761952,
+      "closed": true,
+      "oneBody": true,
+      "sha256": "735d6eadac2175260f9c802efb1f59bea14a1d69715f930dacc00de4584ff2a2"
+    },
+    {
+      "file": "spacer-print-four.stl",
+      "boundsMm": [
+        14.0,
+        14.0,
+        45.0
+      ],
+      "volumeMm3": 6513.9953895215995,
+      "closed": true,
+      "oneBody": true,
+      "sha256": "c4210b42ff1374afe49316fd111b4c7742aae5f91528a4c6e7df5cd4a1b847c2"
+    },
+    {
+      "file": "coupon-hole30-seat1.2.stl",
+      "boundsMm": [
+        46.0,
+        46.0,
+        1.2
+      ],
+      "volumeMm3": 1682.27945846832,
+      "closed": true,
+      "oneBody": true,
+      "sha256": "943abeb831ccaf5a81d481c3d26174086d1bf230bf5984b73f3dc3e9fdbdbc13"
+    },
+    {
+      "file": "coupon-hole30-seat1.6.stl",
+      "boundsMm": [
+        46.0,
+        46.0,
+        1.6
+      ],
+      "volumeMm3": 2243.0392779577596,
+      "closed": true,
+      "oneBody": true,
+      "sha256": "bf671fd7065ff08339362ff498228bc3937a5d4ebdc5bbb4b8f370a668f64b4d"
+    },
+    {
+      "file": "coupon-hole30-seat2.stl",
+      "boundsMm": [
+        46.0,
+        46.0,
+        2.0
+      ],
+      "volumeMm3": 2803.7990974472,
+      "closed": true,
+      "oneBody": true,
+      "sha256": "2f0f1d0a24ecce5325f8be13408d3fce3908e99bb886af05fc4cad7e9a05bdab"
+    },
+    {
+      "file": "coupon-hole30.2-seat1.2.stl",
+      "boundsMm": [
+        46.0,
+        46.0,
+        1.2
+      ],
+      "volumeMm3": 1670.94053818848,
+      "closed": true,
+      "oneBody": true,
+      "sha256": "369567757cb6cb966ee592dc84b6efcc0abfa30058af7de9de53ba53fee79101"
+    },
+    {
+      "file": "coupon-hole30.2-seat1.6.stl",
+      "boundsMm": [
+        46.0,
+        46.0,
+        1.6
+      ],
+      "volumeMm3": 2227.9207175846395,
+      "closed": true,
+      "oneBody": true,
+      "sha256": "db4bdf7362c34335e2758493f2a448abf5743cfd0a824d3116a7ccb15e6abe38"
+    },
+    {
+      "file": "coupon-hole30.2-seat2.stl",
+      "boundsMm": [
+        46.0,
+        46.0,
+        2.0
+      ],
+      "volumeMm3": 2784.9008969807996,
+      "closed": true,
+      "oneBody": true,
+      "sha256": "68ee90082b82f29de751d518818fe3e345ca00c1042daee5f4b685a604a5c06c"
+    },
+    {
+      "file": "coupon-hole30.4-seat1.2.stl",
+      "boundsMm": [
+        46.0,
+        46.0,
+        1.2
+      ],
+      "volumeMm3": 1659.5251881503998,
+      "closed": true,
+      "oneBody": true,
+      "sha256": "c2ec1d8652af263422a2ec039480b85970f5cac52497268f24707a42fc2d73f8"
+    },
+    {
+      "file": "coupon-hole30.4-seat1.6.stl",
+      "boundsMm": [
+        46.0,
+        46.0,
+        1.6
+      ],
+      "volumeMm3": 2212.7002508672,
+      "closed": true,
+      "oneBody": true,
+      "sha256": "fdea03a7ea50695c9aca5ba7d396d2647a0958f2721f14baf30d84eed980b171"
+    },
+    {
+      "file": "coupon-hole30.4-seat2.stl",
+      "boundsMm": [
+        46.0,
+        46.0,
+        2.0
+      ],
+      "volumeMm3": 2765.8753135839993,
+      "closed": true,
+      "oneBody": true,
+      "sha256": "02f5099ff687b060167a496449d596b95c6375dcdfcd7f0c73f1b97fe563472c"
+    }
+  ],
+  "checks": {
+    "boltPitchMm": [
+      160,
+      90
+    ],
+    "stackWithoutFeetMm": 51,
+    "buttonSeatToBaseMm": 46.4,
+    "buttonDepthAllowanceMm": 38.1,
+    "remainingButtonMarginMm": 8.299999999999997,
+    "breadboardEnvelopeMm": [
+      55,
+      82.6,
+      9.3
+    ],
+    "accessWindowMm": [
+      66,
+      94
+    ],
+    "boltBelowBaseMm": 4,
+    "minimumFootHeightMm": 6
+  },
+  "limits": [
+    "No physical print or received-part fit test",
+    "No structural simulation or load certification",
+    "No exact full component solids; assembly colors include reference envelopes",
+    "DXF profiles are machining inputs, not CNC programs"
+  ],
+  "dxfChecks": [
+    {
+      "file": "base_dxf.dxf",
+      "closedLoops": 9,
+      "boundsMm": [
+        180.0,
+        110.0
+      ]
+    },
+    {
+      "file": "deck_dxf.dxf",
+      "closedLoops": 7,
+      "boundsMm": [
+        180.0,
+        110.0
+      ]
+    },
+    {
+      "file": "pocket_dxf.dxf",
+      "closedLoops": 1,
+      "boundsMm": [
+        38.0,
+        38.0
+      ]
+    }
+  ]
+}

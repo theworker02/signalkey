@@ -1,0 +1,13 @@
+id,part,quantity,material,prototype_process,production_direction,finish,critical_interface,status
+T1-01,upper housing,1,off-white PETG prototype,FDM,PC-ABS or PC injection mold with fine matte texture,warm off-white matte,"button opening, light pocket, four M2.5 insert bores",provisional
+T1-02,broad button cap,1,off-white PETG prototype,FDM,PC-ABS or PC injection mold,warm off-white fine matte,"104x84mm planform, 1.2mm nominal all-around clearance, four guide shoes",provisional
+T1-03,button guide/support,1,PETG prototype,FDM,PC-ABS injection mold or stamped support after validation,black hidden,"four 5.2mm shoes, central plunger and stop surfaces",provisional
+T1-04,amber light guide,1,transparent amber PETG prototype,FDM,UV-stabilized optical-grade amber PC or PMMA injection mold,polished optical face / masked sides,"11x2.2mm visible aperture and under-flange",provisional
+T1-05,lower chassis,1,graphite PETG prototype,FDM,PC-ABS injection mold,graphite fine matte,"four underside M2.5 fasteners, PCB supports, rear connector opening",provisional
+T1-06,guide clearance coupon,1,PETG,FDM,n/a,n/a,"1.20 / 1.35 / 1.50mm variants",prototype only
+T1-HW-01,M2.5 heat-set insert,4,brass,install in upper housing,selected supplier drawing required,n/a,"3.6mm nominal bore",unselected supplier
+T1-HW-02,M2.5x8 pan screw,4,steel,underside assembly,selected supplier drawing required,black zinc,"2.7mm through and 5.8mm countersink",unselected supplier
+T1-HW-03,silicone foot,4,black silicone,adhesive pad,custom foot/pad after friction validation,black matte,"10mm reference diameter; does not cover screws",unselected supplier
+T1-HW-04,Adafruit 471 arcade button,1,existing P3 part,bench-installed,replace only after a separate PCB/switch redesign,hidden,"29.5mm body / 33.2mm bezel / 38.1mm depth reported in existing P3 documents; force and travel must be measured",existing prototype
+T1-HW-05,Adafruit 1643 NeoPixel ring,1,existing P3 part,bench-wired,production optical source selection after validation,hidden,"36.8mm OD / 23.3mm ID / 6.7mm thickness reported in existing P3 documents; feeds the short T1-04 light-guide envelope",existing prototype
+T1-HW-06,Adafruit 64 breadboard,1,existing P3 part,bench-installed,replace with designed PCB only after board review,hidden,"82.6x55x9.3mm reported in existing P3 documents; no PCB CAD, mounting holes or exact USB datum available",existing prototype

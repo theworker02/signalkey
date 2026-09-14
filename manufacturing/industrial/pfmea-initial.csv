@@ -1,0 +1,9 @@
+process,failure_mode,effect,cause_to_investigate,proposed_prevention,proposed_detection,owner_role,validation_status
+PCB assembly,Wrong LED lot,Excess current or wrong optical result,Uncontrolled substitution,Approved BOM and change review,Lot identity and current/optical test,Electrical engineer,Open
+Housing molding,Warped locating surfaces,Forced assembly and button binding,Resin moisture shrink or cooling variation,Tool/resin process qualification,Datum gauge and fit measurement,Tooling engineer,Open
+Subassembly insertion,Reversed or incompletely seated carrier,No travel or overstressed PCB,Symmetric geometry or fixture error,Keyed features and defined load path,Vision plus force/displacement window,Mechanical engineer,Open
+Screwdriving,Cross-thread or missing screw,Loose housing or cracked boss,Pickup error or wrong alignment,Guided tooling and validated joint design,Presence and torque-angle records,Process engineer,Open
+Programming,Duplicate serial or wrong firmware,Traceability loss or wrong behavior,Stale recipe or database race,Version lock and uniqueness constraint,Readback and transaction record,Test engineer,Open
+Robot handling,Dropped or uncertain part,Damage or wrong station state,Grip fault or interrupted operation,Pickup confirmation and deterministic reconciliation,Part sensors plus fault record,Cell integrator,Open
+Restart,Repeated physical operation,Damage or unexpected action,Blind retry after lost acknowledgement,Unique persistent transaction and reconcile state,Restart/fault-injection acceptance tests,Controls engineer,Open
+Functional test,False pass,Defective unit escapes,Uncalibrated fixture or incomplete criteria,Measurement study and known-fault reference units,Periodic challenge checks and audit,Quality engineer,Open

@@ -1,0 +1,73 @@
+{
+  "revision": "M1",
+  "method": "OpenSCAD 2021.01 CGAL export + trimesh 4.8.1 mesh inspection",
+  "parts": [
+    {
+      "part": "base",
+      "watertight": true,
+      "consistentWinding": true,
+      "positiveVolume": true,
+      "bounds_mm": [
+        55.0,
+        55.0,
+        20.0
+      ],
+      "volume_mm3": 18775.526,
+      "sha256": "3a4a5b324b04266497b1c9ff413ed9091d297cfd8a5401a7cc9c8a46b86cd811"
+    },
+    {
+      "part": "lid",
+      "watertight": true,
+      "consistentWinding": true,
+      "positiveVolume": true,
+      "bounds_mm": [
+        55.0,
+        55.0,
+        2.0
+      ],
+      "volume_mm3": 3533.796,
+      "sha256": "0eedbf2e80b800d6eaad1ead803a2f8b4293aa665a1374f31a8a0553aa030a52"
+    },
+    {
+      "part": "cap",
+      "watertight": true,
+      "consistentWinding": true,
+      "positiveVolume": true,
+      "bounds_mm": [
+        38.5,
+        38.5,
+        10.0
+      ],
+      "volume_mm3": 5555.683,
+      "sha256": "4a5cae849828b7a5ee7cd7a071fe55dab63284689cba01f5aa7ea2b9ba28533e"
+    },
+    {
+      "part": "diffuser",
+      "watertight": true,
+      "consistentWinding": true,
+      "positiveVolume": true,
+      "bounds_mm": [
+        43.0,
+        43.0,
+        1.4
+      ],
+      "volume_mm3": 551.4,
+      "sha256": "f0866331ba057d884b05449621f2adfa55762da83652389551be7c69a6e98d36"
+    },
+    {
+      "part": "carrier",
+      "watertight": true,
+      "consistentWinding": true,
+      "positiveVolume": true,
+      "bounds_mm": [
+        49.4,
+        40.5,
+        1.8
+      ],
+      "volume_mm3": 586.015,
+      "sha256": "16dde9edb6b7ac73d1e7acf090ec8eebe7254fd4445ecbecff177dc044d1f0e6"
+    }
+  ],
+  "sampledCollisionVolume_mm3": 0.0,
+  "limits": "Ideal geometry only. Collision result includes intended zero-volume contact faces. Samples cap travel at 0.05 mm steps. No printed fit, strength, return spring, connector or actual PCB validation."
+}

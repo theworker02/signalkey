@@ -1,0 +1,10 @@
+operation,characteristic,method,proposed_sampling,acceptance,status,reaction,record
+Incoming,Exact component and material revision,Drawing and supplier certificate review,Each lot,Approved BOM and substitution record,Release gate,Quarantine unmatched lot,Lot record
+Molded housing,Datum and critical fit dimensions,CMM or qualified gauge,First article and plan-defined intervals,Toleranced drawing not yet released,Limits pending,Stop lot and review tool/process change,Dimensional record
+Optical assembly,Pixel visibility and diffusion,Controlled illumination and optical fixture,Every unit proposed,Measured approved reference and numeric limits pending,Fixture pending,Segregate unit and inspect cleanliness/lot,Optical result
+Screwdriving,Fastener presence and clamp integrity,Torque-angle driver plus presence sensor,Every screw proposed,Qualified joint window pending,Limits pending,Hold uncertain operation; no blind redrive,Per-fastener result
+Programming,Correct binary and serial uniqueness,Programmer verification plus database uniqueness,Every unit,Approved hash and unique serial,Tester pending,Quarantine duplicate or mismatch,Provisioning record
+Electrical,Configured/preconfigured/suspend current,Calibrated current and USB-state fixture,Every unit proposed,Reviewed specification and measurement uncertainty,Hardware pending,Stop on abnormal current; preserve result,Numeric current record
+Button,Gesture and return behavior,Instrumented actuation and host event observation,Every unit proposed,Qualified timing/force/travel windows,Fixture pending,Reject and investigate mechanical/electrical source,Gesture record
+Recovery,No stale action after communication loss,Fault injection and event trace,Qualification and change-based sampling,No queued action replay; new release/press required,Hardware pending,Hold revision and investigate,Fault-injection report
+Packing,Label-to-test linkage,Barcode verification,Every unit,Serial maps to complete passing record and correct revision,System pending,Block packing,Pack record

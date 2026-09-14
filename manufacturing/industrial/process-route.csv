@@ -1,0 +1,10 @@
+station,operation,equipment_candidate,input,output,critical_control,evidence,automation_status
+W10,Receive and identify lots,Manual inspection and scanner,Approved BOM and drawings,Accepted segregated lots,Part revision and substitution approval,Lot inspection record,Proposed
+W20,Fabricate and assemble PCB,EMS SMT line,Released PCB pack,Assembled boards,Paste placement reflow and acceptance controls,SPI AOI profile and relevant inspection records,Outsourced proposal
+W30,Program and verify,SWD fixture and current-limited tester,Approved binary and board,Provisioned board,Hash readback serial uniqueness,Programming record,Fixture not implemented
+W40,Load base and locate,Tray feeder robot or operator,Accepted molded base,Clamped oriented base,Datums and clamp confirmation,Presence orientation and transaction record,Cell not designed
+W50,Insert subassemblies,Compliant tooling or operator,PCB carrier optics,Seated assembly,Force displacement orientation and optical cleanliness,Measured process result,Limits unqualified
+W60,Close and fasten,Recorded electric driver,Seated assembly and lid,Closed housing,Screw presence and qualified torque-angle limits,Per-fastener trace,Limits unqualified
+W70,Functional test,USB electrical optical and button fixture,Closed unit,Pass or reject,Current states gestures stale recovery optical output,Numeric immutable result record,Tester not implemented
+W80,Label and pack,Printer scanner pack station,Passing unit,Traceable packaged unit,Serial links to final test and correct firmware revision,Label verification and packaging record,Proposed
+WR,Rework disposition,Authorized repair station,Failed unit,Reworked or scrapped unit,Preserve failure and repeat applicable tests,Original failure plus repair history,Proposed

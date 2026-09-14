@@ -1,0 +1,14 @@
+{
+  "status": "hypothetical planning scenario; not observed capacity or demand",
+  "daysPerMonth":20,
+  "shiftsPerDay":2,
+  "netScheduledHoursPerShift":7,
+  "requiredGoodUnits":10000,
+  "availability":0.85,
+  "performance":0.85,
+  "quality":0.98,
+  "scheduledHours":280,
+  "maximumIdealBottleneckCycleSeconds":71.37144,
+  "formula":"days * shifts * hours * 3600 * availability * performance * quality / requiredGoodUnits",
+  "limits":"Quality is counted once. No batch-process, parallel-station, buffer or changeover validation. No equipment quote or measured cycle time."
+}

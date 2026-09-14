@@ -1,0 +1,27 @@
+{
+  "date": "2026-09-13T22:36:08.534Z",
+  "platform": "win32",
+  "os": "10.0.26200",
+  "node": "v24.16.0",
+  "baseline": "release/0.1.0-alpha.2/SignalKey-win32-x64/SignalKey.exe",
+  "current": "release/0.1.0-alpha.2-integration/SignalKey-win32-x64/SignalKey.exe",
+  "currentExeSha256": "cfe77d27dc8fb618bbe7be097ff62e97bd505610b5d85ac3ac25c8d6a76e8d4f",
+  "results": [
+    "alpha.2 UI: create profile, set executable/arguments/cwd, assign double-cancel, enable through approval adapter, press, real process success",
+    "full process restart + baseline-to-integration portable upgrade preserves profile bytes, selected workflow, bindings and history; no launch on startup",
+    "concurrent run IPC requests: one rejected, exactly one new external side effect",
+    "forced main-process exit after real child side effect: restart records interrupted/unknown, does not retry",
+    "simulated disconnect rejects gesture; reconnect never replays action",
+    "portable reinstall at different path reuses external userData with byte-identical custom profiles"
+  ],
+  "physicalHardware": false,
+  "nativeApprovalDialog": "test adapter; native human interaction not tested",
+  "cleanMachine": false,
+  "uninstall": "portable folder removal not executed; relocation/reinstall tested",
+  "userData": "<isolated temporary user-data directory>",
+  "limitations": [
+    "Forced exit can leave child effects; no exactly-once guarantee for arbitrary external commands",
+    "Old alpha.2 cannot read new interrupted history records; back up before downgrade",
+    "No installer/MSI or signature; portable test distribution only"
+  ]
+}

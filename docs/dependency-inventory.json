@@ -1,0 +1,96 @@
+{
+  "generated": "2026-09-12T16:21:11.392Z",
+  "scope": "Direct dependencies only; transitive and Chromium notices require release audit",
+  "entries": [
+    {
+      "name": "node-hid",
+      "version": "3.4.0",
+      "license": "(MIT OR X11)",
+      "scope": "runtime"
+    },
+    {
+      "name": "react",
+      "version": "19.3.0",
+      "license": "MIT",
+      "scope": "runtime"
+    },
+    {
+      "name": "react-dom",
+      "version": "19.3.0",
+      "license": "MIT",
+      "scope": "runtime"
+    },
+    {
+      "name": "zod",
+      "version": "4.6.2",
+      "license": "MIT",
+      "scope": "runtime"
+    },
+    {
+      "name": "@electron/packager",
+      "version": "20.3.0",
+      "license": "BSD-2-Clause",
+      "scope": "development"
+    },
+    {
+      "name": "@playwright/test",
+      "version": "1.63.0",
+      "license": "Apache-2.0",
+      "scope": "development"
+    },
+    {
+      "name": "@types/node",
+      "version": "24.13.4",
+      "license": "MIT",
+      "scope": "development"
+    },
+    {
+      "name": "@types/react",
+      "version": "19.3.0",
+      "license": "MIT",
+      "scope": "development"
+    },
+    {
+      "name": "@types/react-dom",
+      "version": "19.3.0",
+      "license": "MIT",
+      "scope": "development"
+    },
+    {
+      "name": "electron",
+      "version": "44.3.0",
+      "license": "MIT",
+      "scope": "development"
+    },
+    {
+      "name": "esbuild",
+      "version": "0.28.2",
+      "license": "MIT",
+      "scope": "development"
+    },
+    {
+      "name": "prettier",
+      "version": "3.9.6",
+      "license": "MIT",
+      "scope": "development"
+    },
+    {
+      "name": "tsx",
+      "version": "4.23.13",
+      "license": "MIT",
+      "scope": "development"
+    },
+    {
+      "name": "typescript",
+      "version": "7.0.2",
+      "license": "Apache-2.0",
+      "scope": "development"
+    },
+    {
+      "name": "vite",
+      "version": "8.3.0",
+      "license": "MIT",
+      "scope": "development"
+    }
+  ]
+}

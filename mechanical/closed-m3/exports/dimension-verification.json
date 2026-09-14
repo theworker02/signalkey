@@ -1,0 +1,47 @@
+{
+  "method": "mesh bounds/hash recheck and nominal arithmetic; not physical inspection",
+  "expectedPrintBoundsMm": {
+    "shell": [
+      150,
+      110,
+      60
+    ],
+    "lid": [
+      150,
+      110,
+      9
+    ],
+    "lens": [
+      46,
+      46,
+      4.5
+    ],
+    "tray": [
+      62,
+      50,
+      10.1
+    ],
+    "clamp": [
+      22,
+      12,
+      5
+    ]
+  },
+  "checks": {
+    "lensRadialGapMm": 0.3000000000000007,
+    "lensAxialGapMm": 0.20000000000000284,
+    "ringRadialReserveMm": 0.6000000000000014,
+    "ringToLensGapBeforeAdhesiveMm": 1.7999999999999972,
+    "switchSeatThicknessMm": 1.6000000000000014,
+    "switchBodyToFloorMm": 20.299999999999997,
+    "trayDriverD4ToBodyRadialReserveMm": 9.608987629529715,
+    "lidDriverD6ToLightReserveMm": 34.25804665451803,
+    "clampDriverD4ToPocketXReserveMm": 2.1999999999999993
+  },
+  "limitations": [
+    "Actual tool tip/head envelopes and fastener torque unqualified",
+    "Adhesive thickness reduces optical reserve",
+    "Cable bore is not a qualified clamp",
+    "Purchased full component solids absent"
+  ]
+}

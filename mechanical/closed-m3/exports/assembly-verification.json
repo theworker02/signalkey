@@ -1,0 +1,126 @@
+{
+  "revision": "M3",
+  "date": "2026-09-13T22:32:04.096837+00:00",
+  "sourceSha256": "031a52f7a416daaa630f10e2944a2a1943eca759b1006781057edbf5bb38a733",
+  "tool": "OpenSCAD 2021.01 CGAL / trimesh",
+  "meshes": [
+    {
+      "file": "shell.stl",
+      "sha256": "0775c067c2adb8c97a0f78adb7c283c712e71d333e44f4b06706c209f0c3a03d",
+      "boundsMm": [
+        150.0,
+        110.0,
+        60.0
+      ],
+      "volumeMm3": 144583.00219173668,
+      "closed": true,
+      "oneBody": true
+    },
+    {
+      "file": "lid.stl",
+      "sha256": "52820d7272293f4f3b37e26f4218a63694bf27f182b239bf9c79bf130954fbd6",
+      "boundsMm": [
+        150.0,
+        110.0,
+        9.0
+      ],
+      "volumeMm3": 42621.4367184666,
+      "closed": true,
+      "oneBody": true
+    },
+    {
+      "file": "lens.stl",
+      "sha256": "dac7ec264129216e08129591fc69f8bd1d721632298981b914cffefc23a38157",
+      "boundsMm": [
+        46.0,
+        46.0,
+        4.5
+      ],
+      "volumeMm3": 6644.43052089,
+      "closed": true,
+      "oneBody": true
+    },
+    {
+      "file": "tray.stl",
+      "sha256": "34953368806b97915935ab727e046935f641202d51bafc48e18de2895fa22153",
+      "boundsMm": [
+        62.0,
+        50.0,
+        10.100000190734999
+      ],
+      "volumeMm3": 8871.303500636308,
+      "closed": true,
+      "oneBody": true
+    },
+    {
+      "file": "clamp.stl",
+      "sha256": "080618e3c7adacdac1b835d356c4f22131487fb85a84fafbc1509a11e20cf727",
+      "boundsMm": [
+        22.0,
+        12.0,
+        5.0
+      ],
+      "volumeMm3": 1118.0770172262858,
+      "closed": true,
+      "oneBody": true
+    }
+  ],
+  "checks": [
+    {
+      "check": "shell/lid",
+      "overlapMm3": 0.0,
+      "passNominal": true
+    },
+    {
+      "check": "shell/lens",
+      "overlapMm3": 0.0,
+      "passNominal": true
+    },
+    {
+      "check": "shell/tray",
+      "overlapMm3": 0.0,
+      "passNominal": true
+    },
+    {
+      "check": "shell/clamp",
+      "overlapMm3": 0.0,
+      "passNominal": true
+    },
+    {
+      "check": "lid/lens",
+      "overlapMm3": 0.0,
+      "passNominal": true
+    },
+    {
+      "check": "lid/tray",
+      "overlapMm3": 0.0,
+      "passNominal": true
+    },
+    {
+      "check": "lid/clamp",
+      "overlapMm3": 0.0,
+      "passNominal": true
+    },
+    {
+      "check": "lens/tray",
+      "overlapMm3": 0.0,
+      "passNominal": true
+    },
+    {
+      "check": "lens/clamp",
+      "overlapMm3": 0.0,
+      "passNominal": true
+    },
+    {
+      "check": "tray/clamp",
+      "overlapMm3": 0.0,
+      "passNominal": true
+    }
+  ],
+  "physicalValidation": false,
+  "limits": [
+    "Nominal CAD only; no supplier full solids or measured tolerances",
+    "Zero-volume intended contact permitted",
+    "No strength, optical uniformity, temperature or retention validation"
+  ]
+}

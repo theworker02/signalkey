@@ -1,0 +1,19 @@
+{
+  "revision": "I1",
+  "status": "proposed non-safety interface; no controller implementation",
+  "safetyBoundary": "No safety function is carried by this interface. Safety controller governs motion permission independently.",
+  "request": ["transactionId", "workOrder", "unitSerial", "productRevision", "recipeRevision", "operation"],
+  "operations": ["load", "assemble", "fasten", "test", "unload"],
+  "states": ["idle", "accepted", "running", "complete", "product_fail", "machine_fault", "reconcile_required"],
+  "result": ["transactionId", "unitSerial", "operation", "startUtc", "endUtc", "resultCode", "measurementRecordId"],
+  "rules": [
+    "Accept only a new unique transaction while idle and with validated identifiers and recipe",
+    "Persist transaction acceptance before requesting physical work",
+    "Duplicate transaction returns recorded state; never repeats motion",
+    "Complete only when station measurements and part disposition are recorded",
+    "Loss of acknowledgement or controller restart enters reconcile_required",
+    "Reset never implies restart permission",
+    "Unknown physical outcome must be reconciled by an authorized operator",
+    "Do not expose machine control through the ordinary SignalKey desktop SDK"
+  ]
+}

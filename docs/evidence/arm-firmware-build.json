@@ -1,0 +1,61 @@
+﻿{
+    "mode":  "ARM compile and link check; invalid USB IDs 0:0; do not flash",
+    "sdkCommit":  "a1438dff1d38bd9c65dbd693f0e5db4b9ae91779",
+    "compiler":  "14.3.1",
+    "size":  [
+                 "   text\t   data\t    bss\t    dec\t    hex\tfilename",
+                 "  35164\t      0\t   3888\t  39052\t   988c\t.local/firmware-check/signalkey.elf"
+             ],
+    "tinyusbCommit":  "86ad6e56c1700e85f1c5678607a762cfe3aa2f47",
+    "sourceHashes":  [
+                         {
+                             "sha256":  "AF9CBE44CF710B7CEF47F5C0C7E10CFF2BBDE34432C830BD5E0046C59B66F5C0",
+                             "name":  "button.h"
+                         },
+                         {
+                             "sha256":  "85BED7348353580C717344811D657BA44791FA4ADB44DA936D47C5983ED2EB4A",
+                             "name":  "button_test.c"
+                         },
+                         {
+                             "sha256":  "6BB9BB3D4F1D194163A250FD56670958A2CDFE185FBB3AC19DD21DE9E4F2798F",
+                             "name":  "CMakeLists.txt"
+                         },
+                         {
+                             "sha256":  "23F604C11B0E60C116489F7ECB0959E617AF7C5B13C02540EE3D77247D89CB47",
+                             "name":  "input_session.h"
+                         },
+                         {
+                             "sha256":  "D81468482960A36B7023573934F2CA5407538350805D49803BFB8E88E14933CE",
+                             "name":  "main.c"
+                         },
+                         {
+                             "sha256":  "B87B80DA4FA2170239D3CA652B4E958FBDB07135D1D14F7A05C405E067E2FFAB",
+                             "name":  "protocol.h"
+                         },
+                         {
+                             "sha256":  "7BD6E9FDACE114DA9FFF2FAF968EA18D63B68EEC900F6C81621FACF2F86446D5",
+                             "name":  "protocol_test.c"
+                         },
+                         {
+                             "sha256":  "16838759E14AD442E8086D167FE47B5B06A761FD9DF756B09172CDC655E16397",
+                             "name":  "ring.pio"
+                         },
+                         {
+                             "sha256":  "DA703967547EF90B6D469D85A0672BF6609BA2474B2AB4939F99054FA095B6CD",
+                             "name":  "session_test.c"
+                         },
+                         {
+                             "sha256":  "677E2C2DBD2F267B3EB19BA37DC37B27A8F87F0D555BFAA9F06ACB7BEE553E3C",
+                             "name":  "tusb_config.h"
+                         },
+                         {
+                             "sha256":  "F6EDEDDCDAAE2F64937CB4729D416CC7CB457D5AD49BDC065C7C38ABAD8D9F55",
+                             "name":  "usb_descriptors.c"
+                         }
+                     ],
+    "hardwareTested":  false,
+    "date":  "2026-09-13T22:25:47.0317630Z",
+    "uf2Generated":  false,
+    "elfSha256":  "DB0827B2708608609EE6494B841A6E24980653491AE59A69389B8B903E4B48C6",
+    "result":  "PASS"
+}

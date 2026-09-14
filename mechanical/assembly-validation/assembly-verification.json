@@ -1,0 +1,145 @@
+{
+  "revision": "M1",
+  "date": "2026-09-13T22:29:59.600143+00:00",
+  "sourceSha256": "a457f20ec56f02cf46d9a9a3c820868231c8efb41a597a1075fec6cec38a4f7c",
+  "tool": "OpenSCAD 2021.01 CGAL / trimesh",
+  "meshes": [],
+  "checks": [
+    {
+      "check": "base/lid",
+      "overlapMm3": 0.0,
+      "passNominal": true
+    },
+    {
+      "check": "base/cap",
+      "overlapMm3": 0.0,
+      "passNominal": true
+    },
+    {
+      "check": "base/diffuser",
+      "overlapMm3": 0.0,
+      "passNominal": true
+    },
+    {
+      "check": "base/carrier",
+      "overlapMm3": 0.0,
+      "passNominal": true
+    },
+    {
+      "check": "lid/cap",
+      "overlapMm3": 0.0,
+      "passNominal": true
+    },
+    {
+      "check": "lid/diffuser",
+      "overlapMm3": 0.0,
+      "passNominal": true
+    },
+    {
+      "check": "lid/carrier",
+      "overlapMm3": 0.0,
+      "passNominal": true
+    },
+    {
+      "check": "cap/diffuser",
+      "overlapMm3": 0.0,
+      "passNominal": true
+    },
+    {
+      "check": "cap/carrier",
+      "overlapMm3": 0.0,
+      "passNominal": true
+    },
+    {
+      "check": "diffuser/carrier",
+      "overlapMm3": 0.0,
+      "passNominal": true
+    },
+    {
+      "check": "cap travel 0.00",
+      "overlapMm3": 0.0,
+      "passNominal": true
+    },
+    {
+      "check": "cap travel 0.05",
+      "overlapMm3": 0.0,
+      "passNominal": true
+    },
+    {
+      "check": "cap travel 0.10",
+      "overlapMm3": 0.0,
+      "passNominal": true
+    },
+    {
+      "check": "cap travel 0.15",
+      "overlapMm3": 0.0,
+      "passNominal": true
+    },
+    {
+      "check": "cap travel 0.20",
+      "overlapMm3": 0.0,
+      "passNominal": true
+    },
+    {
+      "check": "cap travel 0.25",
+      "overlapMm3": 0.0,
+      "passNominal": true
+    },
+    {
+      "check": "cap travel 0.30",
+      "overlapMm3": 0.0,
+      "passNominal": true
+    },
+    {
+      "check": "cap travel 0.35",
+      "overlapMm3": 0.0,
+      "passNominal": true
+    },
+    {
+      "check": "cap travel 0.40",
+      "overlapMm3": 0.0,
+      "passNominal": true
+    },
+    {
+      "check": "cap travel 0.45",
+      "overlapMm3": 0.0,
+      "passNominal": true
+    },
+    {
+      "check": "cap travel 0.50",
+      "overlapMm3": 0.0,
+      "passNominal": true
+    },
+    {
+      "check": "cap travel 0.55",
+      "overlapMm3": 0.0,
+      "passNominal": true
+    },
+    {
+      "check": "cap travel 0.60",
+      "overlapMm3": 0.0,
+      "passNominal": true
+    },
+    {
+      "check": "lid driver envelope",
+      "overlapMm3": 0.0,
+      "passNominal": true
+    },
+    {
+      "check": "carrier driver envelope",
+      "overlapMm3": 0.0,
+      "passNominal": true
+    },
+    {
+      "check": "provisional cable D3",
+      "overlapMm3": 0.0,
+      "passNominal": true
+    }
+  ],
+  "physicalValidation": false,
+  "limits": [
+    "Nominal CAD only; no supplier full solids or measured tolerances",
+    "Zero-volume intended contact permitted",
+    "No strength, optical uniformity, temperature or retention validation"
+  ]
+}

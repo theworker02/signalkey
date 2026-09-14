@@ -1,0 +1,9 @@
+{
+  "sdk": {"url":"https://github.com/raspberrypi/pico-sdk.git","tag":"2.2.0","commit":"a1438dff1d38bd9c65dbd693f0e5db4b9ae91779","tinyusbCommit":"86ad6e56c1700e85f1c5678607a762cfe3aa2f47"},
+  "archives": [
+    {"name":"arm","url":"https://developer.arm.com/-/media/Files/downloads/gnu/14.3.rel1/binrel/arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi.zip","sha256":"836EBE51FD71B6542DD7884C8FB2011192464B16C28E4B38FDDC9350DABA5EE8"},
+    {"name":"pico-tools","url":"https://github.com/raspberrypi/pico-sdk-tools/releases/download/v2.2.0-2/pico-sdk-tools-2.2.0-x64-win.zip","sha256":"470FB7F8F8D6AA83AB320AEAD6D7B6166858D984798857BFB2CC53E58E79BD37"},
+    {"name":"ninja","url":"https://github.com/ninja-build/ninja/releases/download/v1.12.1/ninja-win.zip","sha256":"F550FEC705B6D6FF58F2DB3C374C2277A37691678D6ABA463ADCBB129108467A"}
+  ],
+  "hashProvenance":"SHA256 recorded from official HTTPS downloads on 2026-09-13; integrity pins, not author signatures"
+}

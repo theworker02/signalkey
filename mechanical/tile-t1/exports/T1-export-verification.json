@@ -1,0 +1,118 @@
+{
+  "revision": "T1",
+  "date": "2026-09-14T00:51:09.583227+00:00",
+  "sourceSha256": "adb9c3b8ca40b6d434f74857380db1f60db2c3fa7a7ce158935ebeb850fbdd08",
+  "tool": "OpenSCAD 2021.01 + trimesh",
+  "scope": "Digital export/mesh checks only; no physical prototype or component-fit result",
+  "parts": [
+    {
+      "id": "T1-01-upper",
+      "part": "upper",
+      "stl": "T1-01-upper.stl",
+      "threeMf": "T1-01-upper.3mf",
+      "boundsMm": [
+        128.0,
+        108.0,
+        48.8
+      ],
+      "volumeMm3": 79940.959,
+      "watertight": true,
+      "windingConsistent": true,
+      "sha256Stl": "5e5272eddd8dc30f3a228acfb4fa7eebefeaf9c20a4fb6a23fd78298ef8d1da8",
+      "sha2563mf": "78192dc1b9df25e96bbef4af707da0d3296524109f6c1ede340e6ac717ba458a"
+    },
+    {
+      "id": "T1-02-button",
+      "part": "button",
+      "stl": "T1-02-button.stl",
+      "threeMf": "T1-02-button.3mf",
+      "boundsMm": [
+        104.0,
+        84.0,
+        7.2
+      ],
+      "volumeMm3": 27783.794,
+      "watertight": true,
+      "windingConsistent": true,
+      "sha256Stl": "264e07600ed83004423d784d55b6229e4d88d12be7677eb3d620c1e662d95098",
+      "sha2563mf": "346b77fcf8cdfb1ed8738ee5b0fcf646e07f50ea8362c8c4b72da2aa97f6f313"
+    },
+    {
+      "id": "T1-03-guide",
+      "part": "guide",
+      "stl": "T1-03-guide.stl",
+      "threeMf": "T1-03-guide.3mf",
+      "boundsMm": [
+        112.0,
+        92.0,
+        7.8
+      ],
+      "volumeMm3": 13167.804,
+      "watertight": true,
+      "windingConsistent": true,
+      "sha256Stl": "566318af20a0ae779f6c427564de87fce9b5881f1a2d6f48a700a042bb12b71a",
+      "sha2563mf": "51ad37335d5df34f4083e48504748daafced4a9f64fc5c18cb67ef1082443b1c"
+    },
+    {
+      "id": "T1-04-lightguide",
+      "part": "lightguide",
+      "stl": "T1-04-lightguide.stl",
+      "threeMf": "T1-04-lightguide.3mf",
+      "boundsMm": [
+        12.4,
+        3.6,
+        3.85
+      ],
+      "volumeMm3": 111.679,
+      "watertight": true,
+      "windingConsistent": true,
+      "sha256Stl": "bc7f12044fc88f7f7ca85b5bf325019dfbcf1b3da44d061c28f7c4c2940df96c",
+      "sha2563mf": "6e852f17d9bb0e698309dfc14489145ccdb15ff292db3a6e7fd841998520b3ea"
+    },
+    {
+      "id": "T1-05-lower",
+      "part": "lower",
+      "stl": "T1-05-lower.stl",
+      "threeMf": "T1-05-lower.3mf",
+      "boundsMm": [
+        126.0,
+        106.0,
+        43.6
+      ],
+      "volumeMm3": 53524.214,
+      "watertight": true,
+      "windingConsistent": true,
+      "sha256Stl": "facdbbe54b14204284e540aced108ae9de167e80680672b1750c2657008f38d7",
+      "sha2563mf": "a6a3239614bdecff86f5bccd2c5e7c05e0ef42e3dd3d4a9b5f5b0f986e78fc4b"
+    },
+    {
+      "id": "T1-06-guide-coupon",
+      "part": "coupon",
+      "stl": "T1-06-guide-coupon.stl",
+      "threeMf": "T1-06-guide-coupon.3mf",
+      "boundsMm": [
+        62.0,
+        18.0,
+        4.0
+      ],
+      "volumeMm3": 1128.621,
+      "watertight": true,
+      "windingConsistent": true,
+      "sha256Stl": "c41d8a1f28aed72de6c84b139d8c6a21ae0108c2434537ef7bfd4722fc1a54e9",
+      "sha2563mf": "1f4de6c58eb7577e186bbcabff0341ec09d7138fc51fccbec418db626dc2ea21"
+    }
+  ],
+  "views": [
+    "assembly.png",
+    "exploded.png",
+    "section.png",
+    "top.svg",
+    "rear.svg",
+    "underside.svg"
+  ],
+  "limits": [
+    "No STEP B-rep exporter installed",
+    "E1 PCB, USB-C connector, low-profile switch, LED and light-guide supplier drawings unavailable",
+    "No physical print, tactile, optical, thermal, connector or durability validation"
+  ]
+}

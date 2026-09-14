@@ -1,0 +1,17 @@
+{
+  "revision":"E1",
+  "status":"Engineering assumptions and datasheet calculation; not measured",
+  "ledCount":12,
+  "ledFullWhiteMa":60,
+  "brightnessCeiling":64,
+  "ledQuiescentAllowanceMa":12,
+  "logicInputAllowanceMa":75,
+  "configuredRequestMa":500,
+  "unconfiguredLimitMa":100,
+  "suspendLimitMa":2.5,
+  "limiterResistorKohm":100,
+  "limiterResistorTolerance":0.01,
+  "limiterFormulaSource":"TI TPS2553 SLVS841F section 9.5.1 equation 1, page 15",
+  "usbSources":"USB 2.0 section 7.2.1 and Suspend Current Limit Changes ECN; USB Type-C 2.5 section 2.3.4 and table 4-28",
+  "unverifiedInputs":["Exact LED silicon and quiescent current","Actual logic input current","Regulator and buffer losses","Switch response, start-up and thermal behavior","Inrush and suspend measurements"]
+}

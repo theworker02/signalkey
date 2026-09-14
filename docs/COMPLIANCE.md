@@ -1,0 +1,15 @@
+# First-market assessment — US planning assumption, 2026-09-12
+
+The owner's US context is used as a reversible initial market assumption. Sales jurisdiction is not confirmed. No lab has been contacted, quote obtained, compliance testing performed, or product authorization established.
+
+An RP2040 USB product has no radio but still contains digital circuitry. The FCC describes equipment authorization obligations for unintentional radiators; classification and applicable authorization procedure must be determined for the final product. [FCC DA 22-312](https://docs.fcc.gov/public/attachments/DA-22-312A1.pdf), [FCC Part 15 authorization changes](https://docs.fcc.gov/public/attachments/FCC-17-93A1_Rcd.pdf). Obtain a qualified lab's current determination of emissions standards/test setup, authorization route, US responsible party, retained records, user notices and labeling. This preliminary assessment does not establish the current applicability of every rule to SignalKey.
+
+USB identifiers: obtain Magnexis's own VID through [USB-IF](https://www.usb.org/getting-vendor-id), or a written authorized PID allocation/license that explicitly covers the final distributed product. Borrowing Pico/TinyUSB/example IDs is not a shipping route. USB logo/trademark rights and product test requirements are separate. Firmware has no default VID/PID and refuses configuration without supplied values.
+
+The [USB-IF document library](https://www.usb.org/documents) currently lists Type-C release 2.5 and USB2 electrical compliance specification v1.08. Full applicable text/ECNs, power-state and connector requirements must be reviewed by the electrical engineer. Successful enumeration alone is insufficient.
+
+Environmental/materials work: collect supplier declarations, component material information, packaging composition and end-of-life instructions. [EPA electronics management resources](https://www.epa.gov/electronics-batteries-management) provide a starting point; state electronics recycling/producer rules, chemical restrictions and packaging obligations require jurisdiction-specific applicability review. Do not label a product RoHS/CE/WEEE compliant on the basis of a supplier's unrelated product. EU/UK/other markets require a separate assessment if selected.
+
+Draft lab request (not sent): “Please assess a bus-powered, wired USB2 RP2040 desktop button with RGB LEDs for initial US consumer sale. Quote classification review, pre-compliance emissions, final required testing/documentation, recommended ESD/immunity engineering tests, samples, lead time, retest costs and deliverable ownership. Identify labeling/user manual/responsible-party requirements and what changes trigger retesting. Schematic/layout and final enclosure are not yet available; please distinguish an estimate from a firm quote.”
+
+Release gate: approved final revision, actual lab evidence and documentation, verified material obligations, authorized identifiers/labeling, and no premature compliance logos. Qualified engineering/lab work remains necessary.

@@ -1,0 +1,6 @@
+quantity,electronics_per_started_unit,pcb_assembly_per_started_unit,enclosure_per_started_unit,final_assembly_per_started_unit,test_per_started_unit,accepted_yield,packaging_per_good_unit,batch_inbound_freight_duty,retail_price,discount_fraction,channel_fraction,payment_fraction,payment_fixed,outbound_subsidy,warranty_per_unit,engineering_fixed,test_equipment_fixed,compliance_fixed,tooling_fixed,status
+10,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unquoted
+50,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unquoted
+100,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unquoted
+500,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unquoted
+1000,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unquoted

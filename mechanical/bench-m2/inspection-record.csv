@@ -1,0 +1,10 @@
+record_id,part_revision,lot,operator,date,check,measured_value,unit,acceptance_basis,result,instrument,notes
+,,,,,Coupon hole diameter,,mm,Selected coupon and actual switch fit,NOT_TESTED,,
+,,,,,Coupon seat thickness,,mm,Selected coupon and actual switch retention,NOT_TESTED,,
+,,,,,Plate flatness,,mm,No rocking or forced assembly; final numeric limit pending,NOT_TESTED,,
+,,,,,Spacer length,,mm,45 nominal; equal support without plate warp,NOT_TESTED,,
+,,,,,Bolt-to-desk clearance,,mm,Positive clearance with feet installed,NOT_TESTED,,
+,,,,,Switch terminal clearance,,mm,No contact; actual wire bend clearance checked,NOT_TESTED,,
+,,,,,Switch continuity,,,Open at rest and closed only when pressed,NOT_TESTED,,
+,,,,,Board pin identification,,,GP3 pin5 and GND pin3 confirmed independently,NOT_TESTED,,
+,,,,,USB commissioning,,,Authorized identity and unique serial; no stale actions,NOT_TESTED,,

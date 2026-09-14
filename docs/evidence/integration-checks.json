@@ -1,0 +1,21 @@
+﻿{
+    "node":  "v24.16.0",
+    "physicalHardware":  false,
+    "npm":  "11.13.0",
+    "signature":  "NotSigned",
+    "os":  "Microsoft Windows NT 10.0.26200.0",
+    "date":  "2026-09-13T22:38:15.9142091Z",
+    "checks":  [
+                   {
+                       "output":  "\n\u003e signalkey@0.1.0-alpha.2 typecheck\n\u003e tsc --noEmit\n",
+                       "exitCode":  0,
+                       "command":  "npm run typecheck"
+                   },
+                   {
+                       "output":  "\n\u003e signalkey@0.1.0-alpha.2 test\n\u003e tsx --test tests/*.test.ts tests/*.test.mjs\n\n✔ SDK press subscription delivers and removes listener; oversized bodies are rejected (117.3933ms)\n✔ protocol strict bounds, version, padding and shared golden vector (4.2985ms)\n✔ freshness handles expiry, recovery and backward clock (0.1755ms)\n✔ profile import disables action and migrates v0 (3.1542ms)\n✔ real process pass, fail, invalid executable and directory (2507.0385ms)\n✔ concurrency, cancellation, timeout and bounded output (575.1577ms)\n✔ simulator pass/fail, authenticated SDK and persisted disabled imports (2886.4549ms)\n✔ virtual transport removal and heartbeat expiry (0.2057ms)\n✔ cost model allocates yield once and reports unprofitable scenario (0.5122ms)\n✔ conservative power scenario includes resistor tolerance and reserves positive margins (4.0897ms)\n✔ admission reserves before journal I/O; simultaneous duplicate executes once (218.5605ms)\n✔ cancel during journal write prevents launch; unavailable journal fails closed (5.2288ms)\n✔ unknown interrupted outcome reconciles once across restarts without executing (8.5102ms)\n✔ malformed active-run record blocks launch and preserves evidence (3.8233ms)\n✔ conflicting edits fail without changing mappings; device loss does not replay an active action (200.0412ms)\n✔ HID report ID, ACK correlation, duplicate events and malformed input (1.6972ms)\n✔ HID removal rejects pending requests and missing ACK times out (1004.3718ms)\n✔ v1 migration preserves local bindings while imports cannot reference enabled local workflows (12.1066ms)\n✔ create, duplicate, referenced deletion protection, and selection persist (7.9311ms)\n✔ history survives restart without restoring a current success state (1258.2427ms)\n✔ disconnected virtual state stays disconnected and restore never reruns a command (2.4456ms)\n✔ malformed saved configuration is preserved before recovery (4.0834ms)\n✔ a no-action gesture does not execute; changed binding executes only its enabled target (31.515ms)\nℹ tests 23\nℹ suites 0\nℹ pass 23\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 6209.6094",
+                       "exitCode":  0,
+                       "command":  "npm run test"
+                   }
+               ],
+    "cleanMachine":  false
+}

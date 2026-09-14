@@ -1,0 +1,11 @@
+.program ring
+.side_set 1
+; 10 PIO cycles per bit at 8 MHz = 800 kbit/s; GRB, MSB first.
+.wrap_target
+bitloop:
+    out x, 1       side 0 [2]
+    jmp !x bit_zero side 1 [1]
+    jmp bitloop     side 1 [4]
+bit_zero:
+    nop            side 0 [4]
+.wrap

@@ -1,0 +1,8 @@
+item,quantity,part,supplier,unit_price_usd,price_timestamp,status
+Development board,1,Raspberry Pi Pico H,https://www.raspberrypi.com/products/raspberry-pi-pico/,unknown,not checked,preinstalled headers requested
+Light module,1,Adafruit 1643,https://www.adafruit.com/product/1643,unknown,2026-09-12 page reviewed,exact LED lot and prewired assembly unresolved
+Level shift and protection harness,1,SN74AHCT1G125 plus reviewed current limiter,https://www.ti.com/product/SN74AHCT1G125,unknown,not checked,assembly partner required
+Normally open bench button,1,Adafruit 471,https://www.adafruit.com/product/471,unknown,2026-09-13 page reviewed,38.1mm depth excludes M1; verify received panel fit
+Micro-USB data cable,1,not selected,unknown,unknown,not checked,not charge-only
+Assembly and electrical review,1,service quotation,unknown,unknown,not quoted,owner has no soldering equipment
+Button quick-connect pair,1 pair,Adafruit 1152 or reviewed equivalent,https://www.adafruit.com/product/1152,unknown,2026-09-13,out of stock on source page; technician termination required

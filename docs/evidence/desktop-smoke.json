@@ -1,0 +1,13 @@
+{
+  "date": "2026-09-12T16:07:07.169Z",
+  "desktop": "PASS \u2192 FAILURE \u2192 PASS observed through UI",
+  "security": {
+    "contextIsolation": true,
+    "nodeIntegration": false,
+    "sandbox": true
+  },
+  "nativeHidEnumeration": true,
+  "platform": "win32",
+  "osRelease": "10.0.26200",
+  "electron": "44.3.0"
+}

@@ -1,0 +1,14 @@
+reference,quantity,manufacturer,part_number,description,exact_footprint,supplier_or_datasheet,price_usd,stock_checked_at,alternate,status
+U1,1,Raspberry Pi,RP2040,MCU,QFN-56 7x7mm EP drawing verification pending,https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf,unknown,not checked,none approved,candidate
+U2,1,Winbond,W25Q16JVSSIQ,QSPI flash,SOIC-8 208mil drawing verification pending,https://www.winbond.com/hq/product/code-storage-flash-memory/serial-nor-flash/,unknown,not checked,none approved,ordering code and boot compatibility review required
+U3,1,Texas Instruments,TLV75533PDBVR,3.3V regulator,SOT-23-5 DBV drawing verification pending,https://www.ti.com/product/TLV755P,unknown,not checked,none approved,candidate thermal and capacitor review required
+U4,1,Texas Instruments,SN74AHCT1G125DBVR,5V logic buffer,SOT-23-5 DBV drawing verification pending,https://www.ti.com/lit/ds/symlink/sn74ahct1g125.pdf,unknown,2026-09-12 datasheet only,none approved,candidate
+U5,1,Texas Instruments,TPS2553DBVR,LED rail current limiter,SOT-23-6 DBV drawing verification pending,https://www.ti.com/product/TPS2553,unknown,2026-09-12 datasheet only,none approved,100k 1percent proposed; EN GP4 default-off; physical validation pending
+J1,1,TBD,TBD,USB-C USB2 receptacle,UNSELECTED,unknown,unknown,not checked,none approved,blocking connector drawing and anchors
+D1,1,TBD,TBD,USB ESD protection,UNSELECTED,unknown,unknown,not checked,none approved,blocking capacitance and clamping review
+LED1-LED12,12,TBD,TBD,5V RGB addressable pixel,UNSELECTED,unknown,unknown,not checked,none approved,blocking exact silicon datasheet
+Y1,1,TBD,TBD,12MHz crystal,UNSELECTED,unknown,unknown,not checked,none approved,load and reference design review required
+SW1,1,TBD,TBD,Normally open tactile switch,UNSELECTED,unknown,unknown,not checked,none approved,force travel lifetime carrier review required
+R_CC1 R_CC2,2,TBD,TBD,5.1k Rd separate on CC1 and CC2,0603 proposed,unknown,unknown,not checked,none approved,1percent proposed; separate Rd; connector footprint pending
+PASSIVES,unknown,TBD,TBD,Decoupling termination bias crystal and protection parts,UNSELECTED,unknown,unknown,not checked,none approved,incomplete schematic prevents quantity
+R_ILIM,1,TBD,TBD,100k 1percent TPS2553 limit resistor,0603 proposed,https://www.ti.com/lit/ds/symlink/tps2553.pdf,unknown,not checked,none approved,E1 calculated candidate not approved

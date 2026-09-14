@@ -1,0 +1,11 @@
+test,instrument_or_method,target,actual,unit_serial,material_lot,operator,date,result
+shell/lid size,,150 x 110; fit trial ±0.3mm,,,,,,NOT PERFORMED
+flatness,,≤0.5mm fit trial,,,,,,NOT PERFORMED
+button return,,100 / 100 presses,,,,,,NOT PERFORMED
+assembly cycles,,5 without damage,,,,,,NOT PERFORMED
+cable retention,,approved force limit required before qualification,,,,,,NOT PERFORMED
+ring power/startup,,scope VBUS LED_5V DIN GP4,,,,,,NOT PERFORMED
+all 12 pixels,,all states visually checked,,,,,,NOT PERFORMED
+suspend current,,whole device measured per USB test plan,,,,,,NOT PERFORMED
+max-white heat,,30min; approved limits required,,,,,,NOT PERFORMED
+held reconnect,,no input replay,,,,,,NOT PERFORMED

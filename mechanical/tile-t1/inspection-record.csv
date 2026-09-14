@@ -1,0 +1,14 @@
+build_id,date,operator,requirement,method,result,measurement_or_observation,evidence_file,status
+T1-____,YYYY-MM-DD,,component envelope,measure received Pico/breadboard/switch/ring/connector and compare to CAD envelopes,,, ,NOT_TESTED
+T1-____,YYYY-MM-DD,,button coupon,print all three clearance coupons and select no-rub clearance for actual process,,, ,NOT_TESTED
+T1-____,YYYY-MM-DD,,button center actuation,measure force/travel against actual switch and record return,,, ,NOT_TESTED
+T1-____,YYYY-MM-DD,,button edge actuation,repeat at four edge midpoints; record force/travel/binding,,, ,NOT_TESTED
+T1-____,YYYY-MM-DD,,button corner actuation,repeat at all four corners; record force/travel/binding,,, ,NOT_TESTED
+T1-____,YYYY-MM-DD,,overtravel load path,verify guide/stops contact before switch overload at measured travel,,, ,NOT_TESTED
+T1-____,YYYY-MM-DD,,connector access,insert three representative USB cable shells fully; inspect connector loading,,, ,NOT_TESTED
+T1-____,YYYY-MM-DD,,wiring and strain,inspect chafe/bend/service loop; pull and continuity test approved harness,,, ,NOT_TESTED
+T1-____,YYYY-MM-DD,,light function,observe alignment/leakage/brightness/status legibility in bright and dim conditions,,, ,NOT_TESTED
+T1-____,YYYY-MM-DD,,fastener and inserts,torque/pull validation using selected supplier/material/process,,, ,NOT_TESTED
+T1-____,YYYY-MM-DD,,assembly/service,open/close with four screws; verify tool and connector access without removing feet,,, ,NOT_TESTED
+T1-____,YYYY-MM-DD,,stability,press off-center corners on representative desk; observe slide/tip and foot grip,,, ,NOT_TESTED
+T1-____,YYYY-MM-DD,,reconnect behavior,exercise real device cable disconnect/reconnect; capture desktop/firmware evidence,,, ,NOT_TESTED

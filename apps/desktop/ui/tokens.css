@@ -1,0 +1,23 @@
+:root {
+  --bg: #11151c;
+  --signal: #bcc6d7;
+}
+.state-idle {
+  --signal: #bcc6d7;
+}
+.state-running {
+  --signal: #719cfa;
+}
+.state-success {
+  --signal: #75d9a2;
+}
+.state-failure {
+  --signal: #f4818e;
+}
+.state-cancelled {
+  --signal: #eabb69;
+}
+.state-unknown,
+.state-disconnected {
+  --signal: #957b52;
+}
