@@ -40,6 +40,27 @@ The desktop companion is local-first: it stores profiles and history on the loca
 
 The repository includes a reproducible Windows package check and automated coverage for process lifecycle, duplicate admission, cancellation, interrupted-run recovery, configuration persistence, protocol bounds and desktop behavior. The current evidence distinguishes simulator results from physical-device results; it never treats simulated connection behavior as hardware validation.
 
+### A typical workflow
+
+1. Create or select a profile for a context such as a project, build, test suite or local tool.
+2. Configure a workflow with an executable, argument array, absolute working directory and timeout.
+3. Assign the workflow to single press, double press or hold; assign cancel or no action where appropriate.
+4. Review and explicitly enable the action. Imports and changed execution details do not become runnable silently.
+5. Trigger the gesture from the simulator or an approved device. SignalKey records the observed process result and bounded output.
+6. Inspect Activity and history. If the application was interrupted mid-run, SignalKey records an unknown/interrupted outcome and requires a deliberate human decision before another run.
+
+### Persistence, recovery and duplicate behavior
+
+Profiles, gesture assignments, selected profile and history are stored in Electron's local user-data area. An in-flight action receives a durable intent record before the process launches; its final history record is written before that intent is removed. If the app exits unexpectedly, recovery marks the unresolved action interrupted. SignalKey does not automatically replay it because arbitrary commands may have caused an external effect before the interruption.
+
+Concurrent identical presses are admitted once per active run. A later deliberate press after completion is a new action; the product does not represent this transport-level safeguard as permanent business-operation idempotency. See the [integration readiness report](docs/READINESS-INTEGRATION.md) for the exact tested boundaries.
+
+### Connection model
+
+The companion can use **Virtual SignalKey** for software evaluation, or a bounded vendor-defined HID protocol for a future physical device. The host handshakes, checks capabilities, uses acknowledgements and expires stale device state. Disconnecting a status device does not undo an already-launched local command, and reconnecting never replays that command.
+
+The physical HID behavior is still an unverified integration target. Read [hardware integration evidence](docs/HARDWARE-INTEGRATION.md) before interpreting protocol tests as a device qualification.
+
 ## TILE T1 physical direction
 
 TILE T1 translates the selected rounded-square desktop-control appearance into a larger serviceable package for the current P3 bench stack. Its **128 × 108 × 52 mm** study envelope accommodates the documented arcade switch, Pico/breadboard prototype, LED ring, wiring and rear Micro-USB access without claiming that a smaller concept enclosure can fit them.
@@ -53,6 +74,24 @@ The active package includes:
 - Separate [prototype and production route](mechanical/tile-t1/PROTOTYPE-AND-PRODUCTION.md)
 
 The outputs have passed digital mesh/export checks. They have **not** passed print-and-fit, connector, harness, optical, tactile, durability, moldability, electrical or production validation. STEP is intentionally absent because a B-rep CAD exporter is not installed; see [STEP export status](mechanical/tile-t1/STEP-EXPORT-BLOCKED.md).
+
+### Mechanical intent
+
+The large cap is guided at four distributed points rather than balanced on a single switch. Its center plunger engages the current arcade-button envelope, while guide/load posts are intended to carry normal overtravel into the chassis instead of loading a PCB. The graphite lower chassis holds the service seam, underside fasteners and feet; the white upper housing retains the clean desktop-facing surfaces. These are design-intent features that need measurement against the received switch and physical corner-press testing.
+
+The narrow upper-right light feature uses the existing LED-ring envelope as an internal source. An amber prototype insert is visually aligned with the selected concept, but a tinted guide can affect RGB status readability. The production optical material remains a partner validation decision; see the [T1 prototype and production route](mechanical/tile-t1/PROTOTYPE-AND-PRODUCTION.md).
+
+## Releases and downloadable material
+
+The current pre-release is [v0.1.0-alpha.2 — TILE T1 engineering handoff](https://github.com/theworker02/signalkey/releases/tag/v0.1.0-alpha.2).
+
+| Asset | Intended use | Important boundary |
+| --- | --- | --- |
+| T1 review kit | CAD, drawings, BOM, fit record and partner review | Review/fit-prototype material; not manufacturing release data. |
+| Windows portable package | Evaluate the alpha desktop companion on Windows | Unsigned portable package; keep its extracted directory together. |
+| Source archive | Inspect and reproduce source-controlled material | Requires Node 24 and documented local tools; it does not include local toolchains or release binaries. |
+
+Each release asset has a SHA-256 record where supplied. Hashes establish file integrity only; they are not a software signature, security certification or production approval.
 
 ## Run locally
 
@@ -77,6 +116,26 @@ npm run test:desktop
 
 See the [Windows installation and recovery guide](docs/WINDOWS-INSTALLATION.md) for portable-package, upgrade, recovery and unsigned-build details.
 
+### Configuration and local data
+
+The normal user-data location is `%APPDATA%\SignalKey`. It contains local profile configuration, recent run history, in-flight recovery state and an ephemeral local SDK token. Treat the directory as private: command paths, arguments and output may reveal sensitive project information. Do not commit or share user-data files, especially `sdk.json`.
+
+The application does not add cloud synchronization, telemetry or account requirements. Moving to another package location can preserve the same user data, while a separate `--user-data-dir` is useful for isolated testing.
+
+### Local CLI and SDK
+
+With the desktop companion running, the repository exposes a local CLI and TypeScript SDK for status and workflow interactions:
+
+```powershell
+npm run cli -- devices
+npm run cli -- status
+npm run cli -- run sample-pass
+npm run cli -- light success
+npm run demo:sdk
+```
+
+The local SDK binds only to loopback and uses a session-scoped token. SDK `run` acceptance is not process completion; inspect status/history for the observed result. The SDK cannot create or enable workflows.
+
 ## Architecture
 
 ```mermaid
@@ -91,6 +150,10 @@ flowchart LR
 
 The renderer does not receive unrestricted shell access. The main process validates IPC and workflow configuration; the runner uses an executable and argument array rather than implicit shell interpolation. Read [SECURITY.md](SECURITY.md) before configuring workflows.
 
+### State precedence
+
+When several status sources exist, SignalKey gives priority to an active local runner, then a short-lived SDK state, then the latest observed local result. A disconnected device is represented as stale/unknown rather than as a successful command. Device acknowledgement means that firmware accepted a command; it does not measure emitted light, electrical current, button motion or the semantic success of an external tool.
+
 ## Manufacturing partnership
 
 SignalKey is seeking the right manufacturing-development partner to turn the T1 direction into a buildable product. The repository helps a prospective partner assess the design intent and identify the remaining work; it does not authorize fabrication, procurement, tooling or commercial production.
@@ -102,6 +165,14 @@ The partner scope includes received-part measurement, DFM/DFA, controlled B-rep 
 The desktop is alpha software. The CAD is a virtual engineering study. No physical SignalKey unit, harness, printed enclosure, production PCB, mold, robot cell or factory test fixture has been qualified. The amber prototype optical insert may affect RGB status presentation, and real-device measurements are required before a product decision.
 
 Read the [readiness report](docs/READINESS-INTEGRATION.md) for requirement-level evidence and the prioritized physical/integration risks.
+
+### What must happen next
+
+1. Measure received P3 components and print T1 fit coupons.
+2. Assemble a protected harness and physically validate USB, LED, button, wiring and reconnect behavior.
+3. Record corner-press, optical, service-access and stability evidence in the T1 inspection record.
+4. Convert approved design intent into controlled B-rep CAD and toleranced production drawings through a manufacturing-development partner.
+5. Complete DFM/DFA, sourcing, tooling, fixture, first-article, quality and compliance work before any production claim.
 
 ## Repository map
 
