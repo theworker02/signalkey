@@ -1,4 +1,4 @@
-# SignalKey
+﻿# SignalKey
 
 [![Status](https://img.shields.io/badge/status-engineering%20concept-536878?style=flat-square)](docs/READINESS-INTEGRATION.md)
 [![Desktop](https://img.shields.io/badge/desktop-Windows-0078D4?style=flat-square&logo=windows&logoColor=white)](docs/WINDOWS-INSTALLATION.md)
@@ -24,7 +24,7 @@
 
 ## Start here
 
-| You want to… | Read or run |
+| You want toâ€¦ | Read or run |
 | --- | --- |
 | Try the desktop companion | [Run locally](#run-locally) |
 | Review the complete readiness evidence | [Integration readiness report](docs/READINESS-INTEGRATION.md) |
@@ -63,7 +63,7 @@ The physical HID behavior is still an unverified integration target. Read [hardw
 
 ## TILE T1 physical direction
 
-TILE T1 translates the selected rounded-square desktop-control appearance into a larger serviceable package for the current P3 bench stack. Its **128 × 108 × 52 mm** study envelope accommodates the documented arcade switch, Pico/breadboard prototype, LED ring, wiring and rear Micro-USB access without claiming that a smaller concept enclosure can fit them.
+TILE T1 translates the selected rounded-square desktop-control appearance into a larger serviceable package for the current P3 bench stack. Its **128 Ã— 108 Ã— 52 mm** study envelope accommodates the documented arcade switch, Pico/breadboard prototype, LED ring, wiring and rear Micro-USB access without claiming that a smaller concept enclosure can fit them.
 
 The active package includes:
 
@@ -83,7 +83,7 @@ The narrow upper-right light feature uses the existing LED-ring envelope as an i
 
 ## Releases and downloadable material
 
-The current pre-release is [v0.1.0-alpha.2 — TILE T1 engineering handoff](https://github.com/theworker02/signalkey/releases/tag/v0.1.0-alpha.2).
+The current pre-release is [v0.1.0-alpha.2 â€” TILE T1 engineering handoff](https://github.com/theworker02/signalkey/releases/tag/v0.1.0-alpha.2).
 
 | Asset | Intended use | Important boundary |
 | --- | --- | --- |
@@ -103,7 +103,7 @@ npm run build
 npm start
 ```
 
-Select **Virtual SignalKey (simulator)** and run **Sample · passing tests** to exercise the workflow loop without hardware. The command runs a harmless local sample process and shows its observed result in Activity.
+Select **Virtual SignalKey (simulator)** and run **Sample Â· passing tests** to exercise the workflow loop without hardware. The command runs a harmless local sample process and shows its observed result in Activity.
 
 For development and verification:
 
@@ -191,8 +191,12 @@ Read the [readiness report](docs/READINESS-INTEGRATION.md) for requirement-level
 
 SignalKey is a Magnexis project, created by **Matthew Looney** ([`@theworker02`](https://github.com/theworker02)).
 
-Copyright © 2026 Magnexis. All rights reserved. No open-source license is currently granted; see [LICENSE-STATUS.md](LICENSE-STATUS.md). Prospective manufacturers may review the material under the [manufacturer partnership note](manufacturing/MANUFACTURER-PARTNERSHIP-NOTE.md). Do not manufacture, quote, tool, procure or distribute this work without a separate written agreement and production release.
+Copyright Â© 2026 Magnexis. All rights reserved. No open-source license is currently granted; see [LICENSE-STATUS.md](LICENSE-STATUS.md). Prospective manufacturers may review the material under the [manufacturer partnership note](manufacturing/MANUFACTURER-PARTNERSHIP-NOTE.md). Do not manufacture, quote, tool, procure or distribute this work without a separate written agreement and production release.
 
 ## Contributing and security
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for development standards and [SECURITY.md](SECURITY.md) for vulnerability reporting and security boundaries. Do not submit credentials, personal profiles, guessed fabrication files or unreviewed hardware claims.
+
+## License
+
+**Source-available proprietary** — evaluation under [LICENSE](./LICENSE); commercial / production use via [COMMERCIAL.md](./COMMERCIAL.md). See [LICENSE_TRANSITION_NOTICE.md](./LICENSE_TRANSITION_NOTICE.md).
