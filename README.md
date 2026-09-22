@@ -1,4 +1,12 @@
-﻿# SignalKey
+# SignalKey
+
+
+---
+
+## License & acquisition
+
+This project is **proprietary**. Production use, redistribution, and commercial deployment require a written commercial license or completed acquisition. See [LICENSE](./LICENSE) and [ACQUISITION.md](./ACQUISITION.md). Contact [@theworker02](https://github.com/theworker02).
+
 
 [![Status](https://img.shields.io/badge/status-engineering%20concept-536878?style=flat-square)](docs/READINESS-INTEGRATION.md)
 [![Desktop](https://img.shields.io/badge/desktop-Windows-0078D4?style=flat-square&logo=windows&logoColor=white)](docs/WINDOWS-INSTALLATION.md)
