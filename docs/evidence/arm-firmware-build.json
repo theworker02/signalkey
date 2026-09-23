@@ -1,4 +1,4 @@
-﻿{
+{
     "mode":  "ARM compile and link check; invalid USB IDs 0:0; do not flash",
     "sdkCommit":  "a1438dff1d38bd9c65dbd693f0e5db4b9ae91779",
     "compiler":  "14.3.1",

@@ -1,4 +1,4 @@
-﻿{
+{
     "compiler":  "Zig 0.15.2 cc",
     "physicalHardware":  "NOT TESTED",
     "armFirmwareBuild":  "See arm-firmware-build.json for separate ARM evidence",
